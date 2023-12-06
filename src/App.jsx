@@ -3,6 +3,7 @@ import { Container, Typography, Stack } from '@mui/material'
 import { JSLogo } from './components/JSLogo';
 import { Start } from './pages/Start';
 import { useQuestionsStore } from './store/questions';
+import { Game } from './pages/Game';
 
 
 function App() {
@@ -18,6 +19,7 @@ console.log(questions);
       </Typography>
       <h1>JavaScript Quiz</h1>
       {questions.length===0 && <Start/>}
+      {questions.length>0 && <Game />}
     </main>
  )
 }
