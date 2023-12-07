@@ -15,7 +15,7 @@ const Question=({info})=>{
             <List sx={{bgcolor: "#333"}} disablePadding>
                 {info.answers.map((ans, i)=>{
                     return (
-                        <ListItem key={i}>
+                        <ListItem key={i} divider>
                             <ListItemButton>
                                 <ListItemText primary={ans} sx={{textAlign:"center"}}></ListItemText>
                             </ListItemButton>
